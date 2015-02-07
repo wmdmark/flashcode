@@ -1,0 +1,29 @@
+<div class="alert alert-danger" rv-show="state:error">{ state:error }</div>
+
+<div class="form-container">
+  <div data-row-span="2">
+    <div data-field-span="2">
+      <label>Name</label>
+      <input type="text" class="deck-name" placeholder="A nice name" autocapitalize="off" required rv-value="model:name">
+    </div>
+  </div>
+
+  <div data-row-span="2">
+    <div data-field-span="2">
+      <label>Description</label>
+      <textarea placeholder="Describe the contents of your deck" rv-value="model:description"></textarea>
+    </div>
+  </div>
+
+  <div data-row-span="2">
+    <div data-field-span="2">
+      <label>Byline (optional)</label>
+      <input type="text" placeholder="Who should we credit with this?" autocapitalize="off" required rv-value="model:byline">
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <button type="submit" class="btn btn-lg btn-primary btn-block">Save Deck</button>
+</footer>

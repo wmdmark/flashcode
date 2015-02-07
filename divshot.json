@@ -1,0 +1,9 @@
+{
+  "name": "flashcode",
+  "root": "./public",
+  "clean_urls": true,
+  "error_page": "error.html",
+  "routes": {
+    "**": "index.html"
+  }
+}

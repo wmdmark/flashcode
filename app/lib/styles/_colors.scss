@@ -1,0 +1,55 @@
+//
+// COLOR VARIABLES
+//
+// - Cool
+// - Warm
+// - Gray Scale
+//
+
+$primary: rgba(232,86,87,1);
+$success: rgba(92,184,92,1);
+$warning: rgba(241,196,15,1);
+$info: rgba(52,73,94,1);
+
+@function lighter($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+@function darker($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+
+// Cool
+
+$aqua:  #7FDBFF;
+$blue:  #007aff;
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+
+// Warm
+
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+$red:     #FF4136;
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+
+// Gray Scale
+
+$white:  #fff;
+$silver: #ddd;
+$gray:   #aaa;
+$black:  #111;
+
+
+// Custom
+$border: #ccc;
+$lightText: #666;
+$lightBG: lighten(#ddd, 10%);
+$lightBorder: #ddd;
+
+$borderRadius: 10px;
+$padding:30px;

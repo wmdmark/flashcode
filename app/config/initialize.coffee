@@ -1,0 +1,5 @@
+require "./rivets/config"
+require "./swig/config"
+require "./marionette/config"
+require "./parsley/config"
+require "./parse/config"

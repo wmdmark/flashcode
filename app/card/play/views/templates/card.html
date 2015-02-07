@@ -1,0 +1,25 @@
+<header>
+  <h3>{{ name }}</h3>
+</header>
+
+<div class="instructions-wrap">
+  <div class="instructions">
+    <iframe srcdoc="{{ instructions_doc|safe }}" scrolling="no" frameborder="0"></iframe>
+  </div>
+  <div class="alert" rv-class-alert-danger="state:error" rv-class-alert-success="state:error|negate" rv-show="state:message">
+    <i class="flai-cancel-o" rv-show="state:error"></i>
+    { state:message }
+  </div>
+</div>
+
+<div id="solution-editor" class="solution-editor ace-editor" data-mode="js" data-field="initial"></div>
+
+<footer>
+  <div rv-hide="state:completed">
+    <a href="#" class="btn btn-primary btn-big btn-submit-solution"><i class="flai flai-check-o"></i> Submit</a>
+    <a href="#" class="btn btn-warning btn-primary btn-big skip"><i class="flai flai-skip-o"></i> Skip it</a>
+  </div>
+  <div rv-show="state:completed">
+    <a href="#" class="btn btn-success btn-block btn-big next">Continue</a>
+  </div>
+</footer>

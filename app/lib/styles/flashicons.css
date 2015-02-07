@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'Flashicons';
+	src:url('/fonts/Flashicons.eot?s9gd7s');
+	src:url('/fonts/Flashicons.eot?#iefixs9gd7s') format('embedded-opentype'),
+		url('/fonts/Flashicons.woff?s9gd7s') format('woff'),
+		url('/fonts/Flashicons.ttf?s9gd7s') format('truetype'),
+		url('/fonts/Flashicons.svg?s9gd7s#Flashicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="flai-"], [class*=" flai-"] {
+	font-family: 'Flashicons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.flai-cancel-o:before {
+	content: "\e600";
+}
+
+.flai-check-o:before {
+	content: "\e601";
+}
+
+.flai-info-o:before {
+	content: "\e602";
+}
+
+.flai-list-o:before {
+	content: "\e603";
+}
+
+.flai-play-o:before {
+	content: "\e604";
+}
+
+.flai-review-o:before {
+	content: "\e605";
+}
+
+.flai-skip-o:before {
+	content: "\e606";
+}
+
+.flai-stats-o:before {
+	content: "\e607";
+}
+

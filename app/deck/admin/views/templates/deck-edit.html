@@ -1,0 +1,28 @@
+<header>
+  <div class="container">
+    <h1>{ model:name }</h1>
+    <h3 rv-show="model:byline">by { model:byline }</h3>
+    <p>{ model:description }</p>
+    <div class="admin-links">
+      <a href="#" class="edit-deck">
+        <i class="flai-info-o"></i>
+        Edit Deck Info.
+      </a>
+      <a href="#" class="play-deck">
+        <i class="flai-play-o"></i>
+        Play Deck
+      </a>
+      <a href="https://github.com/wmdmark/flashcode-docs"><i class="fa fa-github"></i> Get Help</a>
+    </div>
+  </div>
+</header>
+
+<div class="cards-container">
+  <div class="container">
+    <header class="clearfix">
+      <h2 class="pull-left">Cards</h2>
+      <a href="" class="btn btn-primary add-card pull-right">+ Add Card</a>
+    </header>
+    <ul class="card-list-container"></ul>
+  </div>
+</div>

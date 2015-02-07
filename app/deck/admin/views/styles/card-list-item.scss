@@ -1,0 +1,41 @@
+@import "compass/css3/transition";
+$height: 60px;
+.card-list-item-view {
+  margin: 0px;
+  position: relative;
+  padding: 0px 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  height: $height;
+
+
+  > a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h3 {
+    line-height: $height;
+    margin: 0px;
+    font-weight: 300;
+  }
+
+  .admin-links {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    a {
+      line-height: $height;
+      margin-left: 10px;
+    }
+  }
+
+  .delete-prompt {
+    height: $height;
+    line-height: $height;
+  }
+
+}

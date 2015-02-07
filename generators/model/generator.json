@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "from": "model.coffee.hbs",
+      "to": "app/{{module}}/models/{{name}}.coffee"
+    },
+    {
+      "from": "collection.coffee.hbs",
+      "to": "app/{{module}}/models/{{name}}-collection.coffee"
+    }
+  ]
+}

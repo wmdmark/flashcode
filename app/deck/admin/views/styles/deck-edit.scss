@@ -1,0 +1,63 @@
+.deck-edit-view {
+  > header {
+    padding: 30px 0px;
+    //border-bottom: 1px solid rgba(#000, .3);
+    background-color: rgba(#000, .3);
+    h1 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+      color: rgba(#fff, .7);
+    }
+    p {
+      margin: 10px 0px;
+    }
+    .admin-links {
+      margin-top: 20px;
+      a {
+        font-size: 14px;
+        color: rgba(232,86,87,1);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .cards-container {
+
+    header {
+      position: relative;
+      .btn-primary {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+      }
+
+      .admin-links a {
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+        i {
+          color: #fff;
+        }
+      }
+
+    }
+    //padding: 20px;
+    //background-color: rgba(#000, .06);
+  }
+
+
+  .card-list-container {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .deck-edit-view > header {
+    text-align: center;
+  }
+}

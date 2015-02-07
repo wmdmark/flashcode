@@ -1,0 +1,193 @@
+@import "compass/css3/box-shadow";
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+
+@import "_colors.scss";
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+body, html {
+  height: 100%;
+}
+
+/* FONTS */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Helvetica Neue', Helvetica, sans-serif; 
+	letter-spacing: .05em;
+	font-weight: 300;
+}
+h1 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 16px;
+}
+p {
+	font-size: 16px;
+	letter-spacing: .01em;
+}
+body, html {
+	margin: 0;
+}
+
+.primary-page {
+	color: white;
+	min-height: 100%;
+	width: 100%;
+	background-color: rgba(52,73,94,1);
+}
+
+ #app-primary-region {
+ 	height: 100%;
+ 	padding-top: 50px;
+ }
+
+/* NAVBAR */
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+	box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.2);
+	h5 {
+		color: #000;
+		margin: 4px 0 0 0;
+	}
+	img {
+		height: 20px;
+	}
+	&.navbar-default {
+		background-color: rgba(248,248,248,.9);
+	}
+}
+
+.alert {
+	margin: 0px;
+	@include border-radius(0px);
+}
+
+/* BUTTONS */
+.btn:focus, .btn-primary:focus {
+  outline: none;
+}
+
+.btn {
+	letter-spacing: 1px;
+	font-weight: 700;
+	border: none;
+	border-radius: 0;
+	&.btn-default {
+		color: black;
+		background-color: rgba(255,255,255,.8);
+		font-size: 16px;
+		padding: 10px;
+		height: 45px;
+	}
+	&.btn-primary {
+		color: white;
+		background-color: $primary;
+	}
+	&.btn-warning {
+		color: black;
+		background-color: $warning;
+	}
+	&.btn-success {
+		color: white;
+		background-color: $success;
+	}
+	&.btn-info {
+		color: white;
+		background-color: $info;
+	}
+	&.btn-danger {
+		color: #fff;
+		background-color: $red;
+	}
+	&.btn-big {
+		height: 60px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+/* ICONS */
+.flai {
+	position: relative;
+	top: -1px;
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.flai-rotate {
+	transform: rotate(45deg);
+}
+
+/* HELPERS */
+.hidden {
+	opacity: 0;
+}
+
+*:focus, .form-control:focus {
+  outline: 0 !important;
+  @include box-shadow(none);
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  -webkit-appearance: none;
+  @include box-shadow(none);
+  @include transition(none);
+
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  @include box-shadow(none);
+  @include transition(none);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+	.deck-info {
+		display: none;
+	}
+	.container-fluid {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}

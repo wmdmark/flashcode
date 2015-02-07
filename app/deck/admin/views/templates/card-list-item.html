@@ -1,0 +1,17 @@
+{% if objectId %}
+<a href="javascript:void(0)" class="item-link">
+  <h3>{{ name }}</h3>
+</a>
+<div class="admin-links">
+  <a href="javascript:void(0)" class="edit">Edit</a>
+  <a href="javascript:void(0)" class="prompt-delete">Delete</a>
+  <a href="javascript:void(0)" class="view">Preview</a>
+</div>
+<div class="delete-prompt" rv-show="state:deleting">
+  A you sure? This cannot be undone.
+  <a href="javascript:void(0)" class="btn btn-danger delete">Yes, Delete</a>
+  or <a href="javascript:void(0)" class="delete-cancel">cancel</a>
+</div>
+{% else %}
+  <a href="#" class="new-card">New Card</a>
+{% endif %}

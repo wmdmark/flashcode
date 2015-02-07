@@ -1,0 +1,110 @@
+@import "compass/css3/box-shadow";
+
+.card-view {
+  position: absolute;
+  
+  width: 100%;
+  min-width: 300px;
+  max-width: 400px;
+  
+  margin: 0 auto;
+  overflow: hidden;  
+  background-color: #fff;
+  
+  &.transitioned-in {
+    @include box-shadow(0px 5px 10px 0px rgba(50, 50, 50, 0.4));
+  }
+
+  &.modal-view {
+    position: static;
+  }
+  
+  header {
+    h3 { 
+      margin: 0px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid black;
+    }
+    padding: 20px;
+    color: black;
+    background-color: white;
+  }
+
+  .instructions {
+    color: black;
+    position: relative;
+    background-color: white;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    iframe {
+      width: 100%;
+      border: 0px;
+      height: 0px;
+    }
+  }
+
+  .instructions-wrap {
+    position: relative;
+    //padding-bottom: 50px;
+    background-color: #fff;
+  }
+
+  .alert {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    width: 100%;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+  }
+  .alert-success {
+    background-color: rgba(46,204,113,.1);
+  }
+  .alert-danger {
+    background-color: rgba(232,86,87,.1);
+  }
+
+
+  .solution-editor {
+    background-color: #000;
+    position: relative;
+    height: 140px;
+    font-size: 14px;
+  }
+
+  footer {
+    .btn {
+      float: left;
+      &.btn-submit-solution {
+        width: 65%;
+      }
+      &.skip {
+        color: rgba(0,0,0,.7);
+        background-color: rgba(255,255,255,.4);
+        width: 35%;
+      }
+    }
+  }
+  
+  // Hide skip button in preview mode
+  &.preview {
+    footer {
+      .btn {
+        float: none;
+        &.btn-submit-solution {
+          width: 100%;
+        }
+        &.skip {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+  
+}
+
+
+

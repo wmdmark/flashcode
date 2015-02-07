@@ -1,0 +1,13 @@
+.card-form-view {
+  position: relative;
+  .card-help {
+    font-size: 1.2em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }  
+  &.modal-view {
+    max-width: 600px;  
+  }
+
+}

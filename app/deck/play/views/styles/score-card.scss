@@ -1,0 +1,47 @@
+.score-card-view {
+  color: black;
+  padding: 20px;
+  background-color: #fff;
+  padding-bottom: 80px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    li {
+      font-size: 16px;
+      position: relative;
+      padding: 20px 0px;
+      margin: 0 auto;
+      span {
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .share-button {
+    display: block;
+    padding-top: 15px;
+    width: 100%;
+    border-top: 1px solid black;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}

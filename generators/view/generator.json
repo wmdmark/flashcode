@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "from": "view.coffee.hbs",
+      "to": "app/{{module}}/views/{{name}}.coffee"
+    },
+    {
+      "from": "empty",
+      "to": "app/{{module}}/views/templates/{{name}}.html"
+    },
+    {
+      "from": "view.scss.hbs",
+      "to": "app/{{module}}/views/styles/{{name}}.scss"
+    }
+
+  ]
+}

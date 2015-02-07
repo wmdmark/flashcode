@@ -1,0 +1,55 @@
+/* Home Styles */
+.home-view {
+	background-color: rgba(52,73,94,1);
+	
+	#preview-card-region {
+		min-height: 200px;
+		.card-view {
+			position: static;
+		}
+	}
+
+	> header {
+		padding-top: 10px;
+		padding-bottom: 20px;
+		margin-bottom: 50px;
+		background-color: rgba(0,0,0,.4);
+		text-align: center;
+		color: white;
+	}
+	.preview {
+		margin: 0 auto;
+		width: 300px;
+		button {
+			height: 60px;
+			width: 100%;
+
+		}
+		.detail {
+			padding: 10px;
+			width: 300px;
+			height: 150px;
+			background-color: #fff;
+		}
+		.code {
+			padding: 15px;
+			width: 300px;
+			height: 123px;
+			background-color: rgba(0,0,0,.5);
+			code {
+				color: #fff;
+				background-color: transparent;
+			}
+		}
+	}
+	.about {
+		padding-top: 20px;
+		width: 100%;
+		background-color: rgba(255,255,255,1);
+		text-align: center;
+		padding-bottom: 50px;
+		.social {
+			margin-top:50px;
+		}
+	}
+}

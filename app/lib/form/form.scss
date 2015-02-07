@@ -1,0 +1,61 @@
+@import "app/lib/styles/_colors.scss";
+
+form {
+  .parsley-errors-list li {
+    color: $red;
+  }
+
+  &.grid-form {
+    [data-row-span] {
+      border-color: $lightBorder;
+    }
+  }
+
+  &.grid-form [data-row-span] [data-field-span] {
+    //border-bottom: 1px solid $border;
+    border-color: $lightBorder;
+    padding: $padding/2 $padding;
+
+    label:first-child {
+      font-size: .9em;
+    }
+  }
+
+}
+
+.grid-form textarea {
+  &.parsley-error, &.parsley-success {
+    background-color: transparent;
+    border: 0px;
+    color: #000;
+  }
+}
+
+$placeholder-color: lighten(#999, 10%);
+.grid-form {
+  ::-webkit-input-placeholder {
+    font-weight: normal !important;
+    color: $placeholder-color !important;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    font-weight: normal !important;
+    color: $placeholder-color !important;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    font-weight: normal !important;
+    color: $placeholder-color !important  
+  }
+
+  :-ms-input-placeholder {  
+    font-weight: normal !important;
+    color: $placeholder-color !important;  
+  }  
+}
+
+.admin-links {
+  a {
+    margin-right: 10px;
+  }
+}

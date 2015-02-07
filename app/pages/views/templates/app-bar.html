@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><img src="/img/Flashcode_wordmark_black.svg" alt="Flashcode"></a>
+  </div>
+  <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-library"><a href="#" class="library"><h5>Library</h5></a></li>
+  
+      {% if not user %}
+      <li>
+        <a href="/auth" class="auth btn btn-primary"><h5>Create</h5></a>
+      </li>
+      {% else %}
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <h5>Me <span class="caret"></span></h5>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/library/mine" class="library-mine">My Decks</a></li>
+          <li><a href="https://github.com/wmdmark/flashcode-docs"><i class="fa fa-github"></i> Help</a></li>
+          <li role="presentation" class="divider"></li>
+          <li><a href="/sign-out" class="auth-out">Sign out</a></li>
+        </ul>
+      </li>
+      {% endif %}
+
+    </ul>
+  </div>
+</div>

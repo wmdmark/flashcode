@@ -1,0 +1,36 @@
+<div class="content">
+	
+	{% if featured %}
+	<div class="featured">
+		<i class="fa fa-star"></i>
+		Featured
+	</div>
+	{% endif %}
+
+	<a href="/deck/{{ objectId }}/play" class="thumb-link">
+	  <h2>{{ name }}</h2>
+	  {% if byline %}
+		<h3>by {{ byline }}</h3>
+	  {% endif %}
+	  <p>{{ description }}</p>
+	  {% if show_admin %}
+	  <div class="admin-links">
+	    <a href="javascript:void(0)" class="edit-deck">Edit</a>
+	    <a href="javascript:void(0)" class="prompt-delete">Delete</a>
+	  </div>
+	  {% endif %}
+	</a>
+
+	<button type="button" class="btn btn-primary btn-big play-deck">
+		<i class="flai flai-play-o"></i>
+		Play
+	</button>
+
+	<div class="delete-prompt" rv-show="state:deleting">
+	  <span class="delete-prompt-message">A you sure? This cannot be undone.</span>
+	  <a href="javascript:void(0)" class="btn btn-danger delete">Yes, Delete</a>
+	  or <a href="javascript:void(0)" class="delete-cancel">cancel</a>
+	</div>
+
+
+</div>

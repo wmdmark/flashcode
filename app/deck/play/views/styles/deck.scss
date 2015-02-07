@@ -1,0 +1,88 @@
+@import "compass/css3/images";
+
+.deck-view {
+  background-color: rgba(52,73,94,1);
+  height: 100%;
+  width: 100%;
+  color: white;
+  #cards-info {  
+    position: relative;
+    background-color: rgba(0,0,0,.4);
+    //@include background-image(linear-gradient(top, rgba(0,0,0,.3) 0%,rgba(0,0,0,0) 100%));
+    .container {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      h1, h5 {
+        margin: 0;
+      }
+      span {
+        min-height: 5px;
+        font-weight: bold;
+        font-size: 12px;
+        color: rgba(255,255,255,.8);
+      }
+      #name-region {
+        h1 {
+          vertical-align: text-bottom;
+        }
+        float: left;
+        width: 25%;
+        text-align: left;
+        vertical-align: text-bottom;
+        padding-right: 10px;
+      }
+      #score-region {
+        .score-card {
+          display: none; // switch to different place
+        }
+        float: right;
+        width: 25%;
+        text-align: right;
+        padding-left: 10px;
+      }
+      .progress {
+        float: left;
+        width: 50%;
+        border: none;
+        border-radius: 0;
+        margin-top: 30px;
+        background-color: rgba(#000, .9);
+      }
+    }
+  } 
+  #cards-region {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+  } 
+}
+
+/* GLOBAL SCORE COLORS */
+.score-skipped {
+  color: rgba(232,86,87,1);
+}
+.score-completed {
+  color: rgba(92,184,92,1);
+}
+
+
+/* MEDIA QUERIES FOR HEADER AREA */
+
+
+@media screen and (max-width: 768px) {
+  .deck-view #cards-info .container {
+    #name-region {
+      width: 40%;
+    }
+    #score-region {
+      width: 60%;
+    }
+    .progress {
+      margin-top: 20px;
+      width: 100%;
+    }
+    #score-region {
+      float: left;
+    }
+  }
+}

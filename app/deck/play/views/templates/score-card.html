@@ -1,0 +1,24 @@
+<div>
+  <h1>Final Results</h1>
+  <ul>
+    <li>
+      <label class="score-time"><i class="flai flai-stats-o"></i> Time:</label> 
+      <span class="score-time">{{ session.timer_formatted }}</span>
+    </li>
+    <li>
+      <label class="score-completed"><i class="flai flai-check-o"></i> Completed:</label>
+      <span class="score-completed">{{ session.completed }}</span>
+    </li>
+    <li>
+      <label class="score-skipped"><i class="flai flai-skip-o"></i> Skipped:</label>
+      <span class="score-skipped">{{ session.skipped }}</span>
+    </li>
+  </ul>
+  <a class="twitter-share-button" data-text="I completed {{ session.completed }} challenge cards on Flashcode in {{ session.timer_formatted }}" href="https://twitter.com/share">
+    Share this!
+  </a>  
+</div>
+
+<footer>
+  <a href="/deck/{{ id }}/play" class="btn btn-success btn-big replay"><i class="flai flai-review-o"></i> Replay</a>
+</footer>

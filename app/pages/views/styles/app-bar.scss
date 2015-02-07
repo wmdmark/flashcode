@@ -1,0 +1,8 @@
+.app-bar-view {
+	&.navbar {
+		border: none;
+	}
+	.btn-primary:hover {
+		background-color: rgba(232,86,87,1)!important;
+	}
+}

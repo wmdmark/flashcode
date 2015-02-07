@@ -1,0 +1,52 @@
+<a href="https://github.com/wmdmark/flashcode-docs/blob/master/cards.md" target="_blank" class="card-help">
+  <i class="fa fa-question-circle"></i>
+  Help
+</a>
+<div class="form-container">
+  <div data-row-span="2">
+     <div data-field-span="2">
+        <label>Name</label>
+        <input type="text" class="card-name" placeholder="A nice name to remember your card by" autocapitalize="off" required rv-value="model:name">
+      </div>
+  </div>
+
+  <div data-row-span="2">
+     <div data-field-span="2">
+        <label>Instructions Markdown</label>
+        <div id="ace-editor-instructions" data-mode="md" class="ace-editor" data-field="instructions">{{ instructions|safe }}</div>
+      </div>
+  </div>
+  <div data-row-span="2">
+     <div data-field-span="2">
+        <label>Context JavaScript (optional)</label>
+        <div id="ace-editor-context" data-mode="js" class="ace-editor ace-editor-context" data-field="context">{{ context|safe }}</div>
+      </div>
+  </div>
+
+  <div data-row-span="2">
+     <div data-field-span="2">
+        <label>Initial JavaScript (optional)</label>
+        <div id="ace-editor-initial" data-mode="js" class="ace-editor" data-field="initial">{{ initial|safe }}</div>
+      </div>
+  </div>
+
+  <div data-row-span="2">
+    <div data-field-span="2">
+      <label>Solution Validation JavaScript</label>
+      <div id="ace-editor-validation" data-mode="js" class="ace-editor" data-field="validation">{{ validation|safe }}</div>
+    </div>
+  </div>
+
+{#   <div data-row-span="2">
+    <div data-field-span="2">
+      <label>Solution</label>
+      <div id="ace-editor-solution" class="ace-editor">{{ solution }}</div>
+    </div>
+  </div>
+ #}
+</div>
+
+<footer>
+  <div class="alert alert-danger" rv-show="state:error">{ state:error }</div>
+  <button type="submit" class="btn btn-lg btn-primary btn-block">Save Card</button>
+</footer>
