@@ -25,7 +25,7 @@ module.exports = class CardView extends require("lib/form/form")
 
   serializeData: ->
     data = super()
-    data.instructions_doc = @getInstructionsDoc()
+    #data.instructions_doc = @getInstructionsDoc()
     if @options.mode
       data.mode = @options.mode
     data
@@ -43,13 +43,10 @@ module.exports = class CardView extends require("lib/form/form")
 
   onShow: ->
     $iframe = @.$("iframe")
-    $iframe.on "load", ->
-      _.delay ->
-        frameEl = $iframe[0]
-        height = $(frameEl.contentWindow.document.body).height()
-        frameEl.style.height = "#{height}px"
-      , 100
-      $iframe.off("load")
+    @listenToOnce App.vent, "sandbox:loaded", ->
+      height = $iframe.contents().height()
+      $iframe.height(height)
+    $iframe.attr("srcdoc", @getInstructionsDoc())
 
   onSubmitSolution: ->
     @state.set(message: null)
